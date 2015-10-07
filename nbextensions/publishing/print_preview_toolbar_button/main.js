@@ -1,14 +1,17 @@
 // add toolbar button calling File->Print Preview menu
 
-"use strict";
-  
-IPython.toolbar.add_buttons_group([
-    {
-        id : 'doPrintView',
+define([
+	'jquery',
+	'base/js/namespace'
+], function (
+	$,
+	IPython
+) {
+    "use strict";
+
+    IPython.toolbar.add_buttons_group([{
         label : 'Create static print view',
         icon : 'fa-print',
-        callback : function(){$('#print_preview').click();}
-    }
-]);
-
-
+        callback : function () { $('#print_preview').click(); }
+    }]);
+});

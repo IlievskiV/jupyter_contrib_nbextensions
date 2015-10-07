@@ -1,0 +1,6 @@
+Type: IPython Notebook Extension
+Compatibility: 3.x, 4.x
+Name: Print preview toolbar button
+Main: main.js
+Icon: icon.png
+Description: Add a toolbar button to call the `File -> Print Preview` menu item
