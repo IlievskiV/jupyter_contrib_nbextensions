@@ -70,7 +70,11 @@ The install process has two steps:
 
 All of the nbextensions in this repo are provided as parts of a python package,
 which is installable in the usual manner, using `pip` or the `setup.py` script.
-You can install directly from the current master branch of the repository
+You can install from pypi:
+
+    pip install jupyter_contrib_nbextensions
+
+or directly from the current master branch of the repository
 
     pip install https://github.com/ipython-contrib/IPython-notebook-extensions/tarball/master
 
@@ -138,3 +142,12 @@ The nbextensions are stored each as a separate subdirectory of `src/jup Each not
  * `thisextension/readme.md` - readme file describing the extension in markdown format
  * `thisextension/config.yaml` - file describing the extension to the `jupyter_nbextensions_configurator` server extension
 
+ Changes
+ =======
+
+ 0.0.1
+ -----
+
+ * switch to numbered versions
+ * First release as the jupyter_contrib_nbextensions pypi package
+ * Split installation into pypi install step & jupyter configure step
